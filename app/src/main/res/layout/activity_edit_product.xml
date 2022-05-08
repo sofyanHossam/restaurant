@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EditProductActivity">
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="20dp"
+        android:background="@drawable/shape_rect01">
+        <ImageView
+            android:id="@+id/AP_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center_horizontal"
+            android:text="Edit Product"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/addProduct_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_baseline_add_shopping_cart_24"
+
+        android:layout_below="@+id/bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addProduct_image"
+        android:orientation="vertical"
+
+        >
+        <EditText
+            android:id="@+id/title"
+            android:layout_below="@+id/bar"
+            android:layout_width="match_parent"
+            android:drawableEnd="@drawable/ic_baseline_title_24"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_margin="8dp"
+            android:layout_marginTop="12dp"
+            android:hint="الاسم"/>
+        <EditText
+            android:id="@+id/descProduct"
+            android:layout_below="@+id/bar"
+            android:drawableEnd="@drawable/ic_baseline_title_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginTop="12dp"
+            android:hint="الوصف"/>
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_below="@+id/bar"
+            android:layout_width="match_parent"
+            android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+            android:drawableLeft="@drawable/ic_baseline_category_24"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_margin="8dp"
+            android:layout_marginTop="12dp"
+            android:hint="النوع"/>
+
+        <EditText
+            android:id="@+id/quantity"
+            android:layout_below="@+id/bar"
+            android:layout_width="match_parent"
+            android:drawableLeft="@drawable/ic_baseline_shopping_cart_24"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_margin="8dp"
+            android:layout_marginTop="12dp"
+            android:hint="الكمية"/>
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_below="@+id/bar"
+            android:layout_width="match_parent"
+            android:drawableLeft="@drawable/ic_baseline_shopping_cart_24"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_margin="8dp"
+            android:hint="السعر"/>
+
+    </LinearLayout>
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/diss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="خصم"
+        android:layout_below="@id/ll"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        />
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/diss"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:id="@+id/dissPrice"
+            android:layout_below="@+id/bar"
+            android:layout_width="match_parent"
+            android:drawableLeft="@drawable/ic_baseline_shopping_cart_24"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_margin="8dp"
+            android:layout_marginTop="12dp"
+            android:hint=" سعر الخصم"/>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/uploadProduct_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="upload Product"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:padding="5dp"
+        android:layout_below="@+id/l2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+</RelativeLayout>

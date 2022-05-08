@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="3dp"
+    android:layout_marginBottom="2dp"
+    app:contentPadding="5dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/orderIdOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="order: 12345"
+            android:textColor="#000"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/dateTvOS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22/9/2001"
+            android:layout_below="@+id/orderIdOS"
+            android:layout_toStartOf="@+id/next_IV_OS"
+            />
+        <TextView
+            android:id="@+id/NameOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:layout_below="@+id/dateTvOS"
+            />
+        <TextView
+            android:id="@+id/costOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cost: £35.44 "
+            android:layout_below="@+id/NameOS"
+            />
+        <TextView
+            android:id="@+id/statusOS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="in Progress"
+            android:layout_toStartOf="@id/next_IV_OS"
+            android:layout_below="@+id/costOS"
+            android:textColor="#0DCA36"
+            />
+
+
+        <ImageView
+            android:id="@+id/next_IV_OS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:layout_alignParentEnd="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_baseline_navigate_next_24"
+            />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

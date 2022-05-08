@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProfileSellerEditActivity">
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="20dp"
+        android:background="@drawable/shape_rect01">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center_horizontal"
+            android:text="Edit Profile"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_baseline_person_24"
+        android:layout_below="@+id/bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:orientation="vertical"
+
+        >
+
+
+        <EditText
+            android:id="@+id/L_nameEt"
+            android:layout_below="@+id/bar"
+            android:layout_width="match_parent"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_margin="8dp"
+            android:layout_marginTop="30dp"
+            android:hint="  restaurant name"/>
+        <EditText
+            android:id="@+id/delivery_phoneEt"
+            android:layout_below="@+id/bar"
+            android:drawableLeft="@drawable/ic_baseline_phone_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:inputType="phone"
+            android:layout_marginTop="30dp"
+            android:hint="  delivery number"/>
+
+        <EditText
+            android:id="@+id/L_AddressEt"
+            android:layout_below="@+id/bar"
+            android:layout_width="match_parent"
+            android:drawableLeft="@drawable/ic_baseline_location_on_24"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_margin="8dp"
+            android:layout_marginTop="30dp"
+            android:hint="  enter address"/>
+        <EditText
+            android:id="@+id/L_email"
+            android:layout_below="@+id/bar"
+            android:layout_width="match_parent"
+            android:drawableLeft="@drawable/ic_email_24"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_margin="8dp"
+            android:layout_marginTop="30dp"
+            android:hint="   change email"/>
+        <EditText
+            android:id="@+id/L_password"
+            android:layout_below="@+id/bar"
+            android:layout_width="match_parent"
+            android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_margin="8dp"
+            android:layout_marginTop="30dp"
+            android:hint="  new password"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:text="restaurant open"
+        android:layout_below="@id/ll"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        />
+
+
+    <Button
+        android:id="@+id/edit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:layout_below="@+id/ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"/>
+</RelativeLayout>
